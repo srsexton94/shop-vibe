@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
 
+## Deployment
+
+This project is deployed using [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages). To deploy run:
+
+```bash
+ng deploy --base-href=/shop-vibe/
+```
+
 ## Development server
 
 To start a local development server, run:
