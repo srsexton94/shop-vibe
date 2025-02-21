@@ -1,35 +1,36 @@
-
 button {
   background-color: #fffcf9;
   color: #6d435a;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25;
-  padding: .875rem 1.5rem;
+  padding: 0.875rem 1.5rem;
   position: relative;
   cursor: pointer;
   transition: all 250ms;
-}
 
-button:hover,
-button:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(-1px);
-}
+  &:disabled {
+    background-color: #f0f0f1;
+    color: grey;
+    cursor: default;
+  }
 
-button:hover {
-  transform: translateY(-1px);
-}
+  &:not([disabled]):hover,
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(-1px);
+  }
 
-button:active {
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
+  &:not([disabled]):active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
 }

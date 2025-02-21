@@ -4,10 +4,15 @@ import { Component, input, output } from '@angular/core';
   selector: 'app-primary-button',
   imports: [],
   styleUrl: './primary-button.component.scss',
-  template: ` <button (click)="buttonClicked.emit()">{{ label() }}</button> `,
+  template: `
+    <button [disabled]="isDisabled()" (click)="buttonClicked.emit()">
+      {{ label() }}
+    </button>
+  `,
 })
 export class PrimaryButtonComponent {
   label = input('');
+  isDisabled = input(false);
 
   buttonClicked = output();
 }

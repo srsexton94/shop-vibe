@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 14rem;
@@ -8,11 +9,23 @@
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
 
+  .stock {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    color: black;
+
+    .out {
+      color: rgb(211, 1, 1);
+      font-weight: 600;
+    }
+  }
+
   img {
     border-radius: 0.25rem;
     width: 90%;
     height: 12rem;
-    margin: 0 auto;
+    margin: 1rem auto 0;
   }
 
   .content {
@@ -22,8 +35,6 @@
     width: 100%;
 
     h2 {
-      overflow: hidden;
-      height: 3rem;
       font-size: 1.5rem;
     }
 
