@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { HeaderComponent } from './components';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent],
   styleUrl: './app.component.scss',
-  template: `
-    <h1>Hello {{ title }}!</h1>
-  `
+  template: ` <app-header /> `,
 })
 export class AppComponent {
-  title = 'ShopVibe';
 }

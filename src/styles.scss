@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  outline-offset: 0.25rem;
+}
+
+*:focus-visible {
+  outline: 0.25rem solid rgba(0, 200, 255, 0.75);
+}
+
+body {
+  background-color: #fffcf9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #6d435a;
+}
